@@ -1,44 +1,82 @@
 import { useState } from "react";
-import profile from "./assets/Andre.png";
+import profile from "./assets/andre.webp";
 import whatsapp from "./assets/whatsapp.webp";
+import github from "./assets/github.webp";
+import linkedin from "./assets/linkedin.webp";
+import adminPanel from "./assets/adminPanel.webp";
+import sCountry from "./assets/searchCountry.webp";
+import tBlog from "./assets/techBlog.webp";
+import toDoApp from "./assets/toDoApp.webp";
+import webVideo from "./assets/webVideo.webp";
+import sPort from "./assets/slicingPort.webp";
+import dashAdmin from "./assets/dashAdmin.webp";
 
 function App() {
   return (
     <>
       <div className="bg-[#000315] bg-[radial-gradient(circle,rgba(1, 51, 61, 1) 0%, rgba(0, 2, 18, 1) 100%)] w-full h-auto ">
         <div className="w-full items-center">
-          <div className="h-screen overflow-hidden">
-            <nav className="glass-bg fixed z-10 w-full">
+          <div className="h-screen overflow-hidden w-full mb-10 items-center">
+            {/* navbar */}
+            <nav className="glass-bg fixed z-10 w-full ">
               <div className="py-3 mx-4 flex items-center justify-between">
-                <span
+                <a
+                  href="#home"
                   className="text-slate-300
-                 text-3xl font-bold"
+                 text-3xl font-bold md:ml-8"
                 >
                   Andre
                   <span className="text-cyan-500 font-bold text-2xl">.Bs</span>
-                </span>
+                </a>
+                <div className="hidden sm:flex sm:text-lg md:mr-8 items-center justify-between gap-4 md:gap-8 mr-3">
+                  <a
+                    href="#about"
+                    className=" text-cyan-500 font-normal text-md relative inline-block after:content-[''] after:absolute after:left-1/2 after:-bottom-1 after:w-0 after:h-[2px] after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
+                  >
+                    About
+                  </a>
+                  <a
+                    href="#journey"
+                    className=" text-cyan-500 font-normal text-md  relative inline-block after:content-[''] after:absolute after:left-1/2 after:-bottom-1 after:w-0 after:h-[2px] after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
+                  >
+                    Journey
+                  </a>
+                  <a
+                    href="#project"
+                    className=" text-cyan-500 font-normal text-md  relative inline-block after:content-[''] after:absolute after:left-1/2 after:-bottom-1 after:w-0 after:h-[2px] after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
+                  >
+                    My Project
+                  </a>
+                  <a
+                    href="#mail"
+                    className=" text-cyan-500 font-normal text-md  relative inline-block after:content-[''] after:absolute after:left-1/2 after:-bottom-1 after:w-0 after:h-[2px] after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
+                  >
+                    Send Mail
+                  </a>
+                </div>
                 <button
-                  className="w-10 h-10 rounded-full bg-cyan-950 bg-center bg-cover "
+                  className="sm:hidden w-10 h-10 rounded-full bg-cyan-950 bg-center bg-cover "
                   style={{ backgroundImage: `url(${profile})` }}
                 ></button>
               </div>
             </nav>
-            <section className="pt-22 px-8 flex justify-center ">
-              <div className="w-lg">
-                <div>
-                  <span className="text-cyan-500 font-normal italic text-sm">
+            {/* hero section */}
+            <section className=" px-8 md:px-14 md:grid md:grid-cols-2 md:gap-10 flex items-center justify-center ">
+              <div className="w-full">
+                <div id="home" className="pt-20">
+                  <span className="text-cyan-500 font-normal italic text-sm md:text-lg">
                     Hello, Myself
                   </span>
-                  <h1 className="text-cyan-500 font-bold text-4xl mt-2">
+                  <h1 className="text-cyan-500 font-bold text-4xl mt-2 md:text-5xl">
                     Andre
                   </h1>
-                  <h3 className="text-cyan-500 font-bold text-2xl mb-2">
-                    <span className="text-slate-200 font-bold text-2xl">
+                  <h3 className="text-cyan-500 font-bold text-2xl md:text-3xl mb-2">
+                    <span className="text-slate-200 font-bold text-2xl md:text-3xl">
                       And I'm&nbsp;
                     </span>
                     Front-End Engineer
                   </h3>
-                  <p className="text-slate-200 font-medium text-sm sm:w-lg">
+                  <p className="text-slate-200 font-normal text-md sm:text-lg">
                     Front-End Engineer dedicated to architecting
                     high-performance, scalable web applications with a focus on
                     clean code and seamless user experiences. Specializing in
@@ -49,30 +87,37 @@ function App() {
                 </div>
                 <div className="mt-8 flex items-center gap-6">
                   <button
-                    className="w-10 h-10 rounded-full bg-cyan-950 bg-center bg-cover "
-                    style={{ backgroundImage: `url(${profile})` }}
+                    className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-cyan-950 bg-center bg-cover border-2 hover:border-cyan-400 border-cyan-700 "
+                    style={{ backgroundImage: `url(${whatsapp})` }}
                   ></button>
                   <button
-                    className="w-10 h-10 rounded-full bg-cyan-950 bg-center bg-cover "
-                    style={{ backgroundImage: `url(${profile})` }}
+                    className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-cyan-950 bg-center bg-cover border-2 hover:border-cyan-400 border-cyan-700 "
+                    style={{ backgroundImage: `url(${github})` }}
                   ></button>
                   <button
-                    className="w-10 h-10 rounded-full bg-cyan-950 bg-center bg-cover "
-                    style={{ backgroundImage: `url(${profile})` }}
+                    className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-cyan-950 bg-center bg-cover border-2 hover:border-cyan-400 border-cyan-700 "
+                    style={{ backgroundImage: `url(${linkedin})` }}
                   ></button>
                 </div>
               </div>
+              <div
+                className="hidden md:flex md:w-[400px] md:h-66 items-center justify-center object-cover"
+                style={{ backgroundImage: `url(${profile})` }}
+              ></div>
             </section>
           </div>
           <main className=" px-8 mt-5">
             {/* About */}
-            <div className="flex flex-col items-center justify-center">
+            <div
+              className="w-full flex flex-col items-center justify-center overflow-hidden px-4 pt-16"
+              id="about"
+            >
               <div className="flex flex-col items-center mb-4">
-                <h1 className="text-cyan-500 font-bold text-2xl">About Me</h1>
+                <h1 className="text-cyan-500 font-bold text-3xl">About Me</h1>
                 <hr className="w-10 rounded-full h-0.5 bg-slate-300" />
               </div>
-              <div className="glass-bg p-3 rounded-2xl w-lg">
-                <p className="text-slate-200 font-medium text-sm">
+              <div className="flex flex-col glass-bg px-6 pt-6 rounded-3xl lg:w-4xl mt-8">
+                <p className="text-slate-200 font-normal text-md md:text-lg">
                   I'm a Full-Stack Developer specializing in React, Tailwind
                   CSS, Express.js, PHP, MySQL, MongoDB, and more. I focus on
                   building high-performance, pixel-perfect web applications with
@@ -83,71 +128,114 @@ function App() {
                   transforming your vision into a scalable digital reality with
                   a modern technology stack.
                 </p>
+                <div className="flex flex-col gap-2 mt-10">
+                  <div>
+                    <span className="text-slate-200 text-md md:text-lg font-medium">
+                      My Skill *
+                    </span>
+                  </div>
+                  <div className="flex gap-4 text-slate-200 text-md md:text-lg">
+                    <span>-- ReactJS</span>
+                    <span>-- TailwindCSS</span>
+                    <span>-- MySQL</span>
+                    <span>-- MongoDB</span>
+                  </div>
+                </div>
               </div>
             </div>
             {/* My Journey */}
-            <div className="mt-20">
+            <div
+              className="mt-20 pt-16 flex flex-col justify-center items-center"
+              id="journey"
+            >
               <div className="flex flex-col items-center mb-4">
-                <h1 className="text-cyan-500 font-bold text-2xl">My Journey</h1>
+                <h1 className="text-cyan-500 font-bold text-3xl">My Journey</h1>
                 <hr className="w-10 rounded-full h-0.5 bg-slate-300" />
               </div>
-              <div className="grid grid-rows-4 gap-4 mt-8 justify-center">
+              <div className="grid grid-rows-4 gap-8 mt-8 items-center justify-center lg:w-4xl">
                 <div className="flex items-center gap-4">
-                  <img src={whatsapp} alt="icon" className="w-10 h-10" />
+                  <img
+                    src={toDoApp}
+                    alt="icon"
+                    className="w-24 h-24 rounded-lg md:w-28 md:h-28"
+                  />
                   <div className="flex flex-col">
                     <h1 className="text-cyan-500 font-bold text-xl">
                       ToDo App
                     </h1>
-                    <span className="text-slate-200 font-normal text-sm">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Deserunt, saepe?
+                    <span className="text-slate-200 font-normal text-md md:text-lg">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Doloribus, mollitia quos unde maiores illum rem molestias
+                      placeat! Deleniti possimus nostrum molestiae error, dolor
+                      dignissimos obcaecati magnam voluptatum reprehenderit nemo
+                      in.
                     </span>
-                    <button className="bg-none border-none text-cyan-300 font-thin text-sm italic text-left cursor-pointer">
+                    <button className="bg-none border-none text-cyan-300 font-thin text-md italic text-left cursor-pointer">
                       see more...
                     </button>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <img src={whatsapp} alt="icon" className="w-10 h-10" />
+                  <img
+                    src={sPort}
+                    alt="icon"
+                    className="w-24 h-24 rounded-lg md:w-28 md:h-28"
+                  />
                   <div className="flex flex-col">
                     <h1 className="text-cyan-500 font-bold text-xl">
-                      ToDo App
+                      Sliching Portfolio Web
                     </h1>
-                    <span className="text-slate-200 font-normal text-sm">
+                    <span className="text-slate-200 font-normal text-md md:text-lg">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Deserunt, saepe?
+                      Impedit repellat tempora eaque eius unde autem, obcaecati
+                      repellendus sed, cupiditate, omnis ipsum debitis dolor?
+                      Neque, libero veritatis. Aut nemo quos similique!
                     </span>
-                    <button className="bg-none border-none text-cyan-300 font-thin text-sm italic text-left cursor-pointer">
+                    <button className="bg-none border-none text-cyan-300 font-thin text-md italic text-left cursor-pointer">
                       see more...
                     </button>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <img src={whatsapp} alt="icon" className="w-10 h-10" />
+                  <img
+                    src={dashAdmin}
+                    alt="icon"
+                    className="w-24 h-24 rounded-lg md:w-28 md:h-28"
+                  />
                   <div className="flex flex-col">
                     <h1 className="text-cyan-500 font-bold text-xl">
-                      ToDo App
+                      Dashboard Admin
                     </h1>
-                    <span className="text-slate-200 font-normal text-sm">
+                    <span className="text-slate-200 font-normal text-md md:text-lg">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Deserunt, saepe?
+                      Tempora recusandae facere dignissimos! Ea laboriosam saepe
+                      expedita doloremque necessitatibus deleniti perferendis
+                      magnam qui placeat possimus dolore, tenetur, nobis
+                      obcaecati voluptates esse!
                     </span>
-                    <button className="bg-none border-none text-cyan-300 font-thin text-sm italic text-left cursor-pointer">
+                    <button className="bg-none border-none text-cyan-300 font-thin text-md italic text-left cursor-pointer">
                       see more...
                     </button>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <img src={whatsapp} alt="icon" className="w-10 h-10" />
+                  <img
+                    src={webVideo}
+                    alt="icon"
+                    className="w-24 h-24 rounded-lg md:w-28 md:h-28"
+                  />
                   <div className="flex flex-col">
                     <h1 className="text-cyan-500 font-bold text-xl">
-                      ToDo App
+                      Web Video
                     </h1>
-                    <span className="text-slate-200 font-normal text-sm">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Deserunt, saepe?
+                    <span className="text-slate-200 font-normal text-md md:text-lg">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Porro, facere eius? Commodi aliquid nemo, inventore velit
+                      repellendus voluptas ratione asperiores delectus
+                      voluptatem ipsam, corporis repellat. Similique nesciunt
+                      sed ratione magni.
                     </span>
-                    <button className="bg-none border-none text-cyan-300 font-thin text-sm italic text-left cursor-pointer">
+                    <button className="bg-none border-none text-cyan-300 font-thin text-md italic text-left cursor-pointer">
                       see more...
                     </button>
                   </div>
@@ -155,51 +243,81 @@ function App() {
               </div>
             </div>
             {/* My Project */}
-            <div className=" mt-20">
+            <div
+              className=" mt-20 pt-16 flex flex-col items-center justify-center"
+              id="project"
+            >
               <div className="flex flex-col items-center mb-4">
-                <h1 className="text-cyan-500 font-bold text-2xl">My Project</h1>
+                <h1 className="text-cyan-500 font-bold text-3xl">My Project</h1>
                 <hr className="w-10 rounded-full h-0.5 mt-1 bg-slate-300" />
               </div>
-              <div className="grid grid-rows-3 gap-3 mt-8 justify-center items-center">
+              <div className="grid grid-rows-3 gap-6 mt-8 w-full lg:w-4xl justify-center items-center">
                 {/* card 1 */}
-                <div className=" flex gap-4 w-lg">
-                  <img src={whatsapp} alt="icon" className="w-24 h-24" />
-                  <span className="text-slate-200 text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quod quibusdam facilis ullam reprehenderit? Nam, voluptates.
-                    Sapiente magni sit dolores sunt?
-                  </span>
+                <div className=" flex gap-4 items-center">
+                  <img
+                    src={adminPanel}
+                    alt="icon"
+                    className="w-24 h-24 rounded-lg md:w-52 md:h-40"
+                  />
+                  <div className="flex flex-col">
+                    <h1 className="text-cyan-500 font-bold text-xl">
+                      Admin Panel
+                    </h1>
+                    <span className="text-slate-200 text-md">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quod quibusdam facilis ullam reprehenderit? Nam,
+                      voluptates. Sapiente magni sit dolores sunt?
+                    </span>
+                  </div>
                 </div>
                 {/* card 2 */}
-                <div className="flex gap-4 mt-2 w-lg">
-                  <span className="text-slate-200 text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quod quibusdam facilis ullam reprehenderit? Nam, voluptates.
-                    Sapiente magni sit dolores sunt?
-                  </span>
-                  <img src={whatsapp} alt="icon" className="w-24 h-24" />
+                <div className="flex gap-4 mt-2 items-center">
+                  <div className="flex flex-col">
+                    <h1 className="text-cyan-500 font-bold text-xl">
+                      Search Country
+                    </h1>
+                    <span className="text-slate-200 text-md">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quod quibusdam facilis ullam reprehenderit? Nam,
+                      voluptates. Sapiente magni sit dolores sunt?
+                    </span>
+                  </div>
+                  <img
+                    src={sCountry}
+                    alt="icon"
+                    className="w-24 h-24 rounded-lg md:w-52 md:h-40"
+                  />
                 </div>
                 {/* card 3 */}
-                <div className="flex gap-4 mt-4 w-lg">
-                  <img src={whatsapp} alt="icon" className="w-24 h-24" />
-                  <span className="text-slate-200 text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quod quibusdam facilis ullam reprehenderit? Nam, voluptates.
-                    Sapiente magni sit dolores sunt?
-                  </span>
+                <div className="flex gap-4 mt-4 items-center">
+                  <img
+                    src={tBlog}
+                    alt="icon"
+                    className="w-24 h-24 rounded-lg md:w-52 md:h-40"
+                  />
+                  <div className="flex flex-col">
+                    <h1 className="text-cyan-500 font-bold text-xl">
+                      Tech Blog
+                    </h1>
+                    <span className="text-slate-200 text-md">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quod quibusdam facilis ullam reprehenderit? Nam,
+                      voluptates. Sapiente magni sit dolores sunt?
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
-            {/* connct Email */}
-            <div className="mt-20">
+            {/* connect Email */}
+            <div className="mt-20" id="mail">
               <div className="flex flex-col items-center mb-4">
-                <h1 className="text-cyan-500 font-bold text-2xl">
+                <h1 className="text-cyan-500 font-bold text-3xl">
                   Let's Connct and Say Hi
                 </h1>
                 <hr className="w-10 rounded-full h-0.5 mt-1 bg-slate-300" />
               </div>
               <div className="w-full flex items-center justify-center">
-                <div className="flex flex-col w-lg">
+                <div className="w-full flex flex-col md:w-lg">
                   <form action="">
                     <div className="flex flex-col mt-2.5">
                       <label className="text-sm font-medium text-slate-200 mb-1">

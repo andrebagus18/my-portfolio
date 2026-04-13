@@ -11,3 +11,7 @@
   /* Menambahkan breakpoint custom */
   --breakpoint-xs: 425px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
