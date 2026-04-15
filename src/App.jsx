@@ -1,6 +1,7 @@
 import { useState } from "react";
 import NavButton from "./components/atoms/navButton";
 import IconButton from "./components/atoms/iconButton";
+import SendMail from "./components/molecules/sendMail";
 import profile from "./assets/saya.webp";
 import adminPanel from "./assets/adminPanel.webp";
 import sCountry from "./assets/searchCountry.webp";
@@ -287,65 +288,7 @@ function App() {
               </div>
             </div>
             {/* connect Email */}
-            <div className="mt-20" id="mail">
-              <div className="flex flex-col items-center mb-4">
-                <h1 className="text-cyan-500 font-bold text-3xl">
-                  Let's Connct and Say Hi
-                </h1>
-                <hr className="w-10 rounded-full h-0.5 mt-1 bg-slate-300" />
-              </div>
-              <div className="w-full flex items-center justify-center">
-                <div className="w-full flex flex-col md:w-lg">
-                  <form action="">
-                    <div className="flex flex-col mt-2.5">
-                      <label className="text-sm font-medium text-slate-200 mb-1">
-                        Your Name<span className="text-red-500">*</span>
-                      </label>
-                      <input
-                        className="w-full border text-slate-200 border-slate-200 rounded-md p-3"
-                        type="text"
-                        name="fullName"
-                        placeholder="John Doe"
-                        // value={dataForm.fullName}
-                        // onChange={handleChange}
-                        required
-                      />
-                    </div>
-                    <div className="flex flex-col mt-2.5">
-                      <label className="text-sm font-medium text-slate-200 mb-1">
-                        Your Email<span className="text-red-500">*</span>
-                      </label>
-                      <input
-                        className="w-full border text-slate-200 border-slate-200 rounded-md p-3"
-                        type="mail"
-                        name="fullName"
-                        placeholder="Johndoe@gmail.com"
-                        // value={dataForm.fullName}
-                        // onChange={handleChange}
-                        required
-                      />
-                    </div>
-                    <div className="flex flex-col mt-2.5">
-                      <label className="text-sm font-medium text-slate-200 mb-1">
-                        Message<span className="text-red-500">*</span>
-                      </label>
-                      <textarea
-                        className="w-full border text-slate-200 border-slate-200 rounded-md p-3"
-                        type="text"
-                        name="content"
-                        placeholder="Hello, I'm John Doe let's be friends"
-                        // value={dataForm.fullName}
-                        // onChange={handleChange}
-                        required
-                      />
-                    </div>
-                    <button className="w-full h-10 mt-4 rounded-md bg-cyan-500 text-slate-200 font-normal ">
-                      Send
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
+            <SendMail />
           </main>
           <footer className=" px-8 mt-12 border border-t border-slate-700">
             <div className="w-full h-auto p-6 flex flex-col items-center">
