@@ -1,8 +1,7 @@
 import { useState } from "react";
-import profile from "./assets/andre.webp";
-import whatsapp from "./assets/whatsapp.webp";
-import github from "./assets/github.webp";
-import linkedin from "./assets/linkedin.webp";
+import NavButton from "./components/atoms/navButton";
+import IconButton from "./components/atoms/iconButton";
+import profile from "./assets/saya.webp";
 import adminPanel from "./assets/adminPanel.webp";
 import sCountry from "./assets/searchCountry.webp";
 import tBlog from "./assets/techBlog.webp";
@@ -29,30 +28,10 @@ function App() {
                   <span className="text-cyan-500 font-bold text-2xl">.Bs</span>
                 </a>
                 <div className="hidden sm:flex sm:text-lg md:mr-8 items-center justify-between gap-4 md:gap-8 mr-3">
-                  <a
-                    href="#about"
-                    className=" text-cyan-500 font-normal text-md relative inline-block after:content-[''] after:absolute after:left-1/2 after:-bottom-1 after:w-0 after:h-[2px] after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
-                  >
-                    About
-                  </a>
-                  <a
-                    href="#journey"
-                    className=" text-cyan-500 font-normal text-md  relative inline-block after:content-[''] after:absolute after:left-1/2 after:-bottom-1 after:w-0 after:h-[2px] after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
-                  >
-                    Journey
-                  </a>
-                  <a
-                    href="#project"
-                    className=" text-cyan-500 font-normal text-md  relative inline-block after:content-[''] after:absolute after:left-1/2 after:-bottom-1 after:w-0 after:h-[2px] after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
-                  >
-                    My Project
-                  </a>
-                  <a
-                    href="#mail"
-                    className=" text-cyan-500 font-normal text-md  relative inline-block after:content-[''] after:absolute after:left-1/2 after:-bottom-1 after:w-0 after:h-[2px] after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
-                  >
-                    Send Mail
-                  </a>
+                  <NavButton target="#about" label="About" />
+                  <NavButton target="#journey" label="Journey" />
+                  <NavButton target="#project" label="My Project" />
+                  <NavButton target="#mail" label="Send Mail" />
                 </div>
                 <button
                   className="sm:hidden w-10 h-10 rounded-full bg-cyan-950 bg-center bg-cover "
@@ -86,24 +65,23 @@ function App() {
                   </p>
                 </div>
                 <div className="mt-8 flex items-center gap-6">
-                  <button
-                    className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-cyan-950 bg-center bg-cover border-2 hover:border-cyan-400 border-cyan-700 "
-                    style={{ backgroundImage: `url(${whatsapp})` }}
-                  ></button>
-                  <button
-                    className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-cyan-950 bg-center bg-cover border-2 hover:border-cyan-400 border-cyan-700 "
-                    style={{ backgroundImage: `url(${github})` }}
-                  ></button>
-                  <button
-                    className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-cyan-950 bg-center bg-cover border-2 hover:border-cyan-400 border-cyan-700 "
-                    style={{ backgroundImage: `url(${linkedin})` }}
-                  ></button>
+                  <IconButton
+                    variant="wa"
+                    url={`https://wa.me/6287759275892`}
+                  />
+                  <IconButton
+                    variant="github"
+                    url={`https://github.com/andrebagus18`}
+                  />
+                  <IconButton
+                    variant="linkedin"
+                    url={`https://linkedin.com/in/andre-bagus`}
+                  />
                 </div>
               </div>
-              <div
-                className="hidden md:flex md:w-[400px] md:h-66 items-center justify-center object-cover"
-                style={{ backgroundImage: `url(${profile})` }}
-              ></div>
+              <div className="hidden md:flex md:w-[300px] md:h-60 items-center justify-center object-cover rounded-">
+                <img src={profile} alt="profile" className="ml-40 mt-20" />
+              </div>
             </section>
           </div>
           <main className=" px-8 mt-5">
@@ -116,7 +94,7 @@ function App() {
                 <h1 className="text-cyan-500 font-bold text-3xl">About Me</h1>
                 <hr className="w-10 rounded-full h-0.5 bg-slate-300" />
               </div>
-              <div className="flex flex-col glass-bg px-6 pt-6 rounded-3xl lg:w-4xl mt-8">
+              <div className="flex flex-col glass-bg px-6 py-6 rounded-3xl lg:w-4xl mt-8">
                 <p className="text-slate-200 font-normal text-md md:text-lg">
                   I'm a Full-Stack Developer specializing in React, Tailwind
                   CSS, Express.js, PHP, MySQL, MongoDB, and more. I focus on
