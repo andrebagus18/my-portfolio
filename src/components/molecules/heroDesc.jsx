@@ -5,7 +5,7 @@ function HeroDesc() {
     <div className="w-full">
       <div id="home" className="pt-20">
         <span className="text-cyan-500 font-normal italic text-sm md:text-lg">
-          Hello, Myself
+          Hello, I'm
         </span>
         <h1 className="text-cyan-500 font-bold text-4xl mt-2 md:text-5xl">
           Andre

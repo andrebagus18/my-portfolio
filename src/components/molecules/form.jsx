@@ -4,26 +4,47 @@ import { useRef, useState } from "react";
 function SendForm() {
   const form = useRef();
 
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState(null);
+
   const SendToMail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm("service_40uedfe", "template_kf3kvdb", form.current, {
-        publicKey: "lxOwRH_KTWXhAXm09",
-      })
-      .then(
-        () => {
-          form.current = "";
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        },
-      );
+    setLoading(true);
+    setStatus(null);
+
+    emailjs.sendForm("service_40uedfe", "template_kf3kvdb", form.current, {
+      publicKey: "lxOwRH_KTWXhAXm09",
+    });
+    try {
+      setStatus("success");
+      form.current.reset();
+    } catch (error) {
+      setStatus("error");
+    } finally {
+      setTimeout(() => {
+        setLoading(false);
+        setStatus("");
+      }, 1500);
+    }
   };
 
   return (
     <>
+      <div className="w-full mx-auto">
+        {status === "success" && (
+          <div className="bg-green-300 text-center py-3 px-2 rounded">
+            ✅ Pesan berhasil dikirim!
+          </div>
+        )}
+
+        {status === "error" && (
+          <div className="bg-red-300 text-center py-3 px-2 rounded">
+            ❌ Gagal mengirim pesan!
+          </div>
+        )}
+      </div>
+
       <form ref={form} onSubmit={SendToMail}>
         <div className="flex flex-col mt-2.5">
           <label className="text-sm font-medium text-slate-200 mb-1">
@@ -63,9 +84,10 @@ function SendForm() {
         </div>
         <button
           type="submit"
-          className="w-full h-10 mt-4 rounded-md bg-cyan-500 hover:bg-cyan-600 cursor-pointer text-slate-200 font-normal "
+          disabled={loading}
+          className={`w-full h-10 mt-4 rounded-md cursor-pointer font-normal ${loading ? "bg-cyan-500 cursor-not-allowed text-black" : "bg-cyan-500 hover:bg-cyan-600 text-slate-200"}`}
         >
-          Send
+          {loading ? "Send 🛇" : "Send"}
         </button>
       </form>
     </>

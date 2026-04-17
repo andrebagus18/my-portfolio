@@ -1,10 +1,10 @@
+import Cards from "../atoms/cards";
+import CardImage from "../atoms/cardImage";
+import CardHead from "../atoms/cardHead";
 import toDoApp from "../../assets/toDoApp.webp";
 import webVideo from "../../assets/webVideo.webp";
 import sPort from "../../assets/slicingPort.webp";
 import dashAdmin from "../../assets/dashAdmin.webp";
-import CardImage from "../atoms/cardImage";
-import BtnMore from "../atoms/btnMore";
-import CardHead from "../atoms/cardHead";
 
 function CardJourney() {
   return (
@@ -13,52 +13,28 @@ function CardJourney() {
         <CardImage target={toDoApp} />
         <div className="flex flex-col">
           <CardHead label="ToDo App" />
-          <span className="text-slate-200 font-normal text-md md:text-lg">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus,
-            mollitia quos unde maiores illum rem molestias placeat! Deleniti
-            possimus nostrum molestiae error, dolor dignissimos obcaecati magnam
-            voluptatum reprehenderit nemo in.
-          </span>
-          <BtnMore />
-        </div>
-      </div>
-      <div className="flex items-center gap-4">
-        <CardImage target={sPort} />
-        <div className="flex flex-col">
-          <CardHead label="Sliching Portfolio Web" />
-          <span className="text-slate-200 font-normal text-md md:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            repellat tempora eaque eius unde autem, obcaecati repellendus sed,
-            cupiditate, omnis ipsum debitis dolor? Neque, libero veritatis. Aut
-            nemo quos similique!
-          </span>
-          <BtnMore />
-        </div>
-      </div>
-      <div className="flex items-center gap-4">
-        <CardImage target={dashAdmin} />
-        <div className="flex flex-col">
-          <CardHead label="Dashboard Admin" />
-          <span className="text-slate-200 font-normal text-md md:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            recusandae facere dignissimos! Ea laboriosam saepe expedita
-            doloremque necessitatibus deleniti perferendis magnam qui placeat
-            possimus dolore, tenetur, nobis obcaecati voluptates esse!
-          </span>
-          <BtnMore />
+          <Cards text="This Todo List app I developed as part of my front-end development journey. Built using JavaScript and CSS3, it features add, edit, and delete tasks with dynamic interactions. The design is responsive so it remains comfortable to use on various devices, including mobile, with a simple and user-friendly interface." />
         </div>
       </div>
       <div className="flex items-center gap-4">
         <CardImage target={webVideo} />
         <div className="flex flex-col">
-          <CardHead label="Web Video" />
-          <span className="text-slate-200 font-normal text-md md:text-lg">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro,
-            facere eius? Commodi aliquid nemo, inventore velit repellendus
-            voluptas ratione asperiores delectus voluptatem ipsam, corporis
-            repellat. Similique nesciunt sed ratione magni.
-          </span>
-          <BtnMore />
+          <CardHead label="Web video" />
+          <Cards text="Aplikasi web video yang dikembangkan menggunakan React.js dan Tailwind CSS dengan pendekatan modern front-end. Menggunakan Zustand untuk state management, Axios untuk pengambilan data API, serta MockAPI sebagai sumber data. Dilengkapi dengan fitur login dan register dengan desain responsif, sehingga memberikan pengalaman pengguna yang aman, interaktif, dan nyaman di berbagai perangkat. Aplikasi ini juga menampilkan daftar video dengan performa optimal dan UI yang clean serta modern." />
+        </div>
+      </div>
+      <div className="flex items-center gap-4">
+        <CardImage target={sPort} />
+        <div className="flex flex-col">
+          <CardHead label="Slicing Web Portfolio" />
+          <Cards text="Web Slicing with Tailwind CSS. This website slicing project, from design to code, uses Tailwind CSS as part of the front-end development process. The focus is on implementing a clean layout, using utility-first styling, and ensuring a responsive display across various screen sizes. The final result features a consistent, modern UI optimized for both desktop and mobile user experiences." />
+        </div>
+      </div>
+      <div className="flex items-center gap-4">
+        <CardImage target={dashAdmin} />
+        <div className="flex flex-col">
+          <CardHead label="Dashboard admin" />
+          <Cards text="The admin dashboard I developed uses JavaScript and CSS3, focusing on a modern and interactive interface. It features components such as data overviews, tables, and structured navigation to facilitate data management. The design is responsive and clean, ensuring a comfortable and visually appealing experience across various devices." />
         </div>
       </div>
     </div>
