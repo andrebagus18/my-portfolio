@@ -14,14 +14,15 @@ function HeroDesc() {
           <span className="text-slate-200 font-bold text-2xl md:text-3xl">
             And I'm&nbsp;
           </span>
-          Front-End Engineer
+          Front-End Developer
         </h3>
-        <p className="text-slate-200 font-normal text-md sm:text-lg">
-          Front-End Engineer dedicated to architecting high-performance,
-          scalable web applications with a focus on clean code and seamless user
-          experiences. Specializing in bridging the gap between complex design
-          systems and robust engineering, transforming creative visions into
-          interactive digital realities.
+        <p className="text-slate-200 font-normal text-lg sm:text-xl">
+          Frontend Developer passionate about building responsive and
+          user-friendly web applications. Experienced with HTML, CSS,
+          JavaScript, React, and creating personal projects to improve
+          problem-solving and development skills. Always learning new
+          technologies and interested in remote opportunities and international
+          collaboration.
         </p>
       </div>
       <div className="mt-8 flex items-center gap-6">

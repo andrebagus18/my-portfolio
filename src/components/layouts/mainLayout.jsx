@@ -11,7 +11,7 @@ function MainLayout() {
     <>
       <div className="bg-[#000315] bg-[radial-gradient(circle,rgba(1, 51, 61, 1) 0%, rgba(0, 2, 18, 1) 100%)] w-full h-auto ">
         <div className="w-full items-center">
-          <div className="h-screen overflow-hidden w-full mb-10 items-center">
+          <div className="min-h-dvh w-full mb-10">
             <Navbar />
             <HeroSection />
           </div>

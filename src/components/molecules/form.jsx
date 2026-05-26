@@ -47,7 +47,7 @@ function SendForm() {
 
       <form ref={form} onSubmit={SendToMail}>
         <div className="flex flex-col mt-2.5">
-          <label className="text-sm font-medium text-slate-200 mb-1">
+          <label className="text-md font-medium text-slate-200 mb-1">
             Your Name<span className="text-red-500">*</span>
           </label>
           <input
@@ -59,7 +59,7 @@ function SendForm() {
           />
         </div>
         <div className="flex flex-col mt-2.5">
-          <label className="text-sm font-medium text-slate-200 mb-1">
+          <label className="text-md font-medium text-slate-200 mb-1">
             Your Email<span className="text-red-500">*</span>
           </label>
           <input
@@ -71,7 +71,7 @@ function SendForm() {
           />
         </div>
         <div className="flex flex-col mt-2.5">
-          <label className="text-sm font-medium text-slate-200 mb-1">
+          <label className="text-md font-medium text-slate-200 mb-1">
             Message<span className="text-red-500">*</span>
           </label>
           <textarea

@@ -1,11 +1,13 @@
 function CardImage({ target }) {
   return (
     <>
-      <img
-        src={target}
-        alt="icon"
-        className="w-24 h-24 rounded-lg md:w-28 md:h-28"
-      />
+      <div className="flex justify-center">
+        <img
+          src={target}
+          alt="icon"
+          className="w-full max-w-[400px] rounded-lg md:w-40 md:h-40"
+        />
+      </div>
     </>
   );
 }
