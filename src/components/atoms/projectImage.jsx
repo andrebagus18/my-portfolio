@@ -5,7 +5,7 @@ function ProjectImage({ target }) {
         <img
           src={target}
           alt="icon"
-          className="w-full max-w-[400px] rounded-lg md:w-52 md:h-40"
+          className="w-full max-w-100 rounded-lg md:w-52 md:h-40"
         />
       </div>
     </>
