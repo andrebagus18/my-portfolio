@@ -15,9 +15,9 @@ function MainLayout() {
             <Navbar />
             <HeroSection />
           </div>
-          <main className=" px-8 mt-5">
+          <main className="px-6 md:px-8 lg:px-18 mt-5">
             <About />
-            <Journey />
+            {/* <Journey /> */}
             <Project />
             <SendMail />
           </main>

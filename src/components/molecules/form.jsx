@@ -47,7 +47,7 @@ function SendForm() {
 
       <form ref={form} onSubmit={SendToMail}>
         <div className="flex flex-col mt-2.5">
-          <label className="text-md font-medium text-slate-200 mb-1">
+          <label className="text-md md:text-lg font-medium text-slate-200 mb-1">
             Your Name<span className="text-red-500">*</span>
           </label>
           <input
@@ -59,7 +59,7 @@ function SendForm() {
           />
         </div>
         <div className="flex flex-col mt-2.5">
-          <label className="text-md font-medium text-slate-200 mb-1">
+          <label className="text-md md:text-lg font-medium text-slate-200 mb-1">
             Your Email<span className="text-red-500">*</span>
           </label>
           <input
@@ -71,7 +71,7 @@ function SendForm() {
           />
         </div>
         <div className="flex flex-col mt-2.5">
-          <label className="text-md font-medium text-slate-200 mb-1">
+          <label className="text-md md:text-lg font-medium text-slate-200 mb-1">
             Message<span className="text-red-500">*</span>
           </label>
           <textarea
@@ -85,9 +85,9 @@ function SendForm() {
         <button
           type="submit"
           disabled={loading}
-          className={`w-full h-10 mt-4 rounded-md cursor-pointer font-normal ${loading ? "bg-cyan-500 cursor-not-allowed text-black" : "bg-cyan-500 hover:bg-cyan-600 text-slate-200"}`}
+          className={`w-full h-10 md:h-14 text-md md:text-lg lg:text-xl mt-4 rounded-md cursor-pointer font-normal ${loading ? "glass-bg cursor-not-allowed text-black border border-cyan-800/40" : "glass-bg hover:text-cyan-600 hover:border-cyan-700 text-slate-200"}`}
         >
-          {loading ? "Send 🛇" : "Send"}
+          {loading ? "Send Message 🛇" : "Send Message"}
         </button>
       </form>
     </>

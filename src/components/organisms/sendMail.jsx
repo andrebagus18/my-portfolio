@@ -7,7 +7,7 @@ function SendMail() {
       <div className="mt-20" id="mail">
         <HeadTitle label="Let's Connect and Say Hi" />
         <div className="w-full flex items-center justify-center">
-          <div className="w-full flex flex-col md:w-lg">
+          <div className="w-full flex flex-col md:w-2xl">
             <SendForm />
           </div>
         </div>

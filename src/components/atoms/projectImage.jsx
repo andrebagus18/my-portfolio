@@ -1,11 +1,11 @@
 function ProjectImage({ target }) {
   return (
     <>
-      <div className="flex justify-center">
+      <div className="w-full">
         <img
           src={target}
           alt="icon"
-          className="w-full max-w-100 rounded-lg md:w-52 md:h-40"
+          className="rounded-xl md:h-60 h-40 w-full"
         />
       </div>
     </>

@@ -7,44 +7,59 @@ function About() {
       id="about"
     >
       <HeadTitle label="About Me" />
-      <div className="flex flex-col overflow-hidden glass-bg py-5 rounded-3xl lg:w-4xl mt-8">
-        <p className="text-slate-200 font-normal text-lg md:text-xl px-5">
-          I am a Frontend Developer who enjoys building responsive,
-          user-friendly, and modern web applications. I continuously improve my
-          skills through personal projects and hands-on experience with
-          JavaScript, React, HTML, and CSS. I am passionate about learning new
-          technologies, solving problems, and creating clean user interfaces.
-          Currently, I am looking for opportunities to grow, collaborate
-          internationally, and contribute to meaningful projects.
-        </p>
-        <div className="flex flex-col gap-2 mt-10">
-          <div>
-            <span className="text-slate-200 text-lg md:text-xl font-medium px-5">
-              My Skill *
-            </span>
-          </div>
-          <div className="flex gap-4 text-slate-200 text-lg md:text-xl h-auto ">
-            <ul className="px-5 gap-4 sm:flex">
-              <li>-- ReactJS</li>
-              <li>-- JavaScript</li>
-              <li>-- TailwindCSS</li>
-            </ul>
-          </div>
+      <div className="flex flex-col overflow-hidden glass-bg p-2 rounded-3xl mt-8">
+        <div className="p-5">
+          <p className="text-slate-200 font-normal text-lg md:text-lg lg:text-xl xl:text-2xl">
+            Hi, I'm Andre, a Web Developer from Indonesia. I enjoy building
+            modern web applications that are simple, responsive, and easy to
+            use. I primarily work with React, Laravel, JavaScript, Node.js, and
+            PostgreSQL to create applications that solve real-world problems. I
+            believe that good software is not only about writing code, but also
+            about understanding users' needs and delivering practical solutions.
+            I continuously improve my skills by building personal projects and
+            learning modern web development technologies.
+          </p>
         </div>
-        <div className="flex flex-col gap-2 mt-10">
+        <div className="flex flex-col gap-2 mt-10 mb-4">
           <div>
-            <span className="text-slate-200 text-lg md:text-xl font-medium px-5">
-              UpSkill *
+            <span className="text-slate-200 text-xl md:text-2xl font-medium px-5">
+              My Skills *
             </span>
           </div>
-          <div className="flex gap-4 text-slate-200 text-lg md:text-xl h-auto ">
-            <ul className="px-5 gap-4 sm:flex">
-              <li>-- ExpressJS</li>
-              <li>-- NodeJS</li>
-              <li>-- PHP</li>
-              <li>-- MySQL</li>
-              <li>-- MongoDB</li>
-            </ul>
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 px-5 text-slate-200 text-lg md:text-xl h-auto ">
+            <div className="flex flex-col gap-2">
+              <span className="text-slate-200 text-xl font-bold">Frontend</span>
+              <ul className="px-5 list-disc text-xl">
+                <li className="p-1">React</li>
+                <li className="p-1">JavaScript</li>
+                <li className="p-1">CSS3</li>
+                <li className="p-1">Tailwind CSS</li>
+              </ul>
+            </div>
+            <div className="flex flex-col gap-2">
+              <span className="text-slate-200 text-xl font-bold">Backend</span>
+              <ul className="px-5 list-disc text-xl">
+                <li className="p-1">Laravel</li>
+                <li className="p-1">Node JS</li>
+                <li className="p-1">Express JS</li>
+                <li className="p-1">REST API</li>
+              </ul>
+            </div>
+            <div className="flex flex-col gap-2">
+              <span className="text-slate-200 text-xl font-bold">Database</span>
+              <ul className="px-5 list-disc text-xl">
+                <li className="p-1">MySQL</li>
+                <li className="p-1">PostgreSQL</li>
+              </ul>
+            </div>
+            <div className="flex flex-col gap-2">
+              <span className="text-slate-200 text-xl font-bold">Tools</span>
+              <ul className="px-5 list-disc text-xl">
+                <li className="p-1">Git & Github</li>
+                <li className="p-1">Postman</li>
+                <li className="p-1">VS Code</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

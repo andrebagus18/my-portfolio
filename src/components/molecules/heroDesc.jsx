@@ -3,26 +3,23 @@ import IconButton from "../atoms/iconButton";
 function HeroDesc() {
   return (
     <div className="w-full">
-      <div id="home" className="pt-20">
-        <span className="text-cyan-500 font-normal italic text-sm md:text-lg">
+      <div id="home" className="pt-30">
+        <span className="text-cyan-500 font-normal italic text-sm md:text-xl">
           Hello, I'm
         </span>
-        <h1 className="text-cyan-500 font-bold text-4xl mt-2 md:text-5xl">
+        <h1 className="text-cyan-500 font-bold text-4xl my-2 md:text-4xl xl:text-6xl">
           Andre
         </h1>
-        <h3 className="text-cyan-500 font-bold text-2xl md:text-3xl mb-2">
-          <span className="text-slate-200 font-bold text-2xl md:text-3xl">
+        <h3 className="text-cyan-500 font-bold text-2xl md:text-4xl xl:text-6xl mb-4">
+          <span className="text-slate-200 font-bold text-2xl md:text-2xl xl:text-4xl">
             And I'm&nbsp;
           </span>
-          Front-End Developer
+          Web Developer
         </h3>
-        <p className="text-slate-200 font-normal text-lg sm:text-xl">
-          Frontend Developer passionate about building responsive and
-          user-friendly web applications. Experienced with HTML, CSS,
-          JavaScript, React, and creating personal projects to improve
-          problem-solving and development skills. Always learning new
-          technologies and interested in remote opportunities and international
-          collaboration.
+        <p className="text-slate-200 font-normal text-lg sm:text-xl md:text-xl xl:text-2xl">
+          I build responsive and user-friendly web applications using React,
+          Laravel, Node.js, and Tailwind CSS, focusing on clean code and
+          practical solutions for real-world problems.
         </p>
       </div>
       <div className="mt-8 flex items-center gap-6">
