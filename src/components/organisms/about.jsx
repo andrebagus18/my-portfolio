@@ -9,7 +9,7 @@ function About() {
       <HeadTitle label="About Me" />
       <div className="flex flex-col overflow-hidden glass-bg p-2 rounded-3xl mt-8">
         <div className="p-5">
-          <p className="text-slate-200 font-normal text-lg md:text-lg lg:text-xl xl:text-2xl">
+          <p className="text-slate-200 font-normal text-lg md:text-lg lg:text-xl">
             Hi, I'm Andre, a Web Developer from Indonesia. I enjoy building
             modern web applications that are simple, responsive, and easy to
             use. I primarily work with React, Laravel, JavaScript, Node.js, and

@@ -10,7 +10,7 @@ import Cards from "../atoms/cards";
 import { FaGithub } from "react-icons/fa";
 import { BiMessageSquareDetail } from "react-icons/bi";
 
-function CardProject() {
+function CardProject({ onDetail }) {
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 px-4 w-full">
@@ -20,7 +20,7 @@ function CardProject() {
           <div className="flex flex-col">
             <HeadProject label="PPDB Online" />
             <div className="min-h-30 md:min-h-40 mb-4">
-              <p className="text-slate-200 font-normal text-md md:text-md lg:text-xl">
+              <p className="text-slate-200 font-normal text-md md:text-md lg:text-lg">
                 A web-based student admission system that digitizes
                 registration, document verification, and admission management,
                 reducing manual paperwork and improving administrative
@@ -39,6 +39,7 @@ function CardProject() {
             </button>
             <button
               type="button"
+              onClick={() => onDetail("ppdb")}
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-amber-800 text-lg xl:text-xl cursor-pointer hover:text-amber-500"
             >
               <span className="flex gap-2 xl:gap-4  items-center justify-center">
@@ -53,7 +54,7 @@ function CardProject() {
           <div className="flex flex-col">
             <HeadProject label="Todo App" />
             <div className="min-h-30 md:min-h-40 mb-4">
-              <p className="text-slate-200 font-normal text-md md:text-md lg:text-xl">
+              <p className="text-slate-200 font-normal text-md md:text-md lg:text-lg">
                 A task management application designed to help users organize
                 daily activities, track progress, and improve productivity
                 through a simple and intuitive interface.
@@ -71,6 +72,7 @@ function CardProject() {
             </button>
             <button
               type="button"
+              onClick={() => onDetail("todo")}
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-amber-800 text-lg xl:text-xl cursor-pointer hover:text-amber-500"
             >
               <span className="flex gap-4 items-center justify-center">
@@ -85,7 +87,7 @@ function CardProject() {
           <div className="flex flex-col">
             <HeadProject label="Library Books" />
             <div className="min-h-30 md:min-h-40 mb-4">
-              <p className="text-slate-200 font-normal text-md md:text-md lg:text-xl">
+              <p className="text-slate-200 font-normal text-md md:text-md lg:text-lg">
                 A library management system that simplifies book cataloging,
                 borrowing, and return processes while helping librarians manage
                 inventory efficiently.
@@ -103,6 +105,7 @@ function CardProject() {
             </button>
             <button
               type="button"
+              onClick={() => onDetail("library")}
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-amber-800 text-lg xl:text-xl cursor-pointer hover:text-amber-500"
             >
               <span className="flex gap-4 items-center justify-center">
@@ -135,6 +138,7 @@ function CardProject() {
             </button>
             <button
               type="button"
+              onClick={() => onDetail("adminPanel")}
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-amber-800 text-lg xl:text-xl cursor-pointer hover:text-amber-500"
             >
               <span className="flex gap-4 items-center justify-center">
@@ -149,7 +153,7 @@ function CardProject() {
           <div className="flex flex-col">
             <HeadProject label="Calculator" />
             <div className="min-h-30 md:min-h-40 mb-4">
-              <p className="text-slate-200 font-normal text-md md:text-md lg:text-xl">
+              <p className="text-slate-200 font-normal text-md md:text-md lg:text-lg">
                 A simple calculator application that performs basic arithmetic
                 operations with a clean interface to provide quick and accurate
                 calculations.
@@ -167,6 +171,7 @@ function CardProject() {
             </button>
             <button
               type="button"
+              onClick={() => onDetail("calc1")}
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-amber-800 text-lg xl:text-xl cursor-pointer hover:text-amber-500"
             >
               <span className="flex gap-4 items-center justify-center">
@@ -181,7 +186,7 @@ function CardProject() {
           <div className="flex flex-col">
             <HeadProject label="Student Dashboard" />
             <div className="min-h-30 md:min-h-40 mb-4">
-              <p className="text-slate-200 font-normal text-md md:text-md lg:text-xl">
+              <p className="text-slate-200 font-normal text-md md:text-md lg:text-lg">
                 A student dashboard that provides centralized access to academic
                 information, announcements, and progress tracking in a
                 responsive web interface.
@@ -199,6 +204,7 @@ function CardProject() {
             </button>
             <button
               type="button"
+              onClick={() => onDetail("dashSiswa1")}
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-amber-800 text-lg xl:text-xl cursor-pointer hover:text-amber-500"
             >
               <span className="flex gap-4 items-center justify-center">

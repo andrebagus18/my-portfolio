@@ -8,7 +8,7 @@ function Navbar() {
       <nav className="glass-bg fixed z-10 w-full ">
         <div className="py-5 mx-4 flex items-center justify-between">
           <NavLogo />
-          <div className="hidden sm:flex text-md md:text-xl xl:text-2xl md:mr-8 items-center justify-between gap-4 md:gap-8 mr-3">
+          <div className="hidden sm:flex text-md md:text-xl md:mr-8 items-center justify-between gap-4 md:gap-8 mr-3">
             <NavButton target="#about" label="About" />
             {/* <NavButton target="#journey" label="Journey" /> */}
             <NavButton target="#project" label="My Project" />

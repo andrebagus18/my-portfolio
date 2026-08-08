@@ -7,16 +7,16 @@ function HeroDesc() {
         <span className="text-cyan-500 font-normal italic text-sm md:text-xl">
           Hello, I'm
         </span>
-        <h1 className="text-cyan-500 font-bold text-4xl my-2 md:text-4xl xl:text-6xl">
+        <h1 className="text-cyan-500 font-bold text-4xl my-2 md:text-4xl xl:text-5xl">
           Andre
         </h1>
-        <h3 className="text-cyan-500 font-bold text-2xl md:text-4xl xl:text-6xl mb-4">
-          <span className="text-slate-200 font-bold text-2xl md:text-2xl xl:text-4xl">
+        <h3 className="text-cyan-500 font-bold text-2xl md:text-4xl xl:text-5xl mb-4">
+          <span className="text-slate-200 font-bold text-2xl md:text-2xl xl:text-3xl">
             And I'm&nbsp;
           </span>
           Web Developer
         </h3>
-        <p className="text-slate-200 font-normal text-lg sm:text-xl md:text-xl xl:text-2xl">
+        <p className="text-slate-200 font-normal text-lg sm:text-xl md:text-xl">
           I build responsive and user-friendly web applications using React,
           Laravel, Node.js, and Tailwind CSS, focusing on clean code and
           practical solutions for real-world problems.
