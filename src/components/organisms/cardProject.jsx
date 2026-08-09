@@ -3,7 +3,7 @@ import ProjectImage from "../atoms/projectImage";
 import ppdb from "../../assets/ppdb.webp";
 import todo from "../../assets/toDoApp.webp";
 import library from "../../assets/library-books.webp";
-import adminPanel from "../../assets/adminPanel.webp";
+import homeEcommerce from "../../assets/home-ecommerce.webp";
 import calc1 from "../../assets/calc1.webp";
 import dashSiswa1 from "../../assets/dashSiswa1.webp";
 import Cards from "../atoms/cards";
@@ -116,14 +116,14 @@ function CardProject({ onDetail }) {
         </div>
         {/* card 4 */}
         <div className="w-full flex flex-col p-4 gap-3 border border-cyan-800/40 bg-cyan-900/10 rounded-xl transition-all duration-300 hover:border-cyan-700 hover:scale-105 hover:shadow-2xl hover:z-1 relative">
-          <ProjectImage target={adminPanel} />
+          <ProjectImage target={homeEcommerce} />
           <div className="flex flex-col">
-            <HeadProject label="Admin Panel" />
+            <HeadProject label="Simple E-commerce" />
             <div className="min-h-30 md:min-h-40 mb-4">
               <p className="text-slate-200 font-normal text-md md:text-md lg:text-xl">
-                A role-based administration panel that streamlines user
-                management, content organization, and system operations through
-                an intuitive interface.
+                A simple e-commerce web application it helps users browse
+                products and provides a structured interface for managing
+                product information.
               </p>
             </div>
           </div>
@@ -138,7 +138,7 @@ function CardProject({ onDetail }) {
             </button>
             <button
               type="button"
-              onClick={() => onDetail("adminPanel")}
+              onClick={() => onDetail("ecommerce")}
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-amber-800 text-lg xl:text-xl cursor-pointer hover:text-amber-500"
             >
               <span className="flex gap-4 items-center justify-center">
@@ -171,7 +171,7 @@ function CardProject({ onDetail }) {
             </button>
             <button
               type="button"
-              onClick={() => onDetail("calc1")}
+              onClick={() => onDetail("calc")}
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-amber-800 text-lg xl:text-xl cursor-pointer hover:text-amber-500"
             >
               <span className="flex gap-4 items-center justify-center">
@@ -204,7 +204,7 @@ function CardProject({ onDetail }) {
             </button>
             <button
               type="button"
-              onClick={() => onDetail("dashSiswa1")}
+              onClick={() => onDetail("dashSiswa")}
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-amber-800 text-lg xl:text-xl cursor-pointer hover:text-amber-500"
             >
               <span className="flex gap-4 items-center justify-center">

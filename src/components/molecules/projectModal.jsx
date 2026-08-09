@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 function ProjectModal({ project, onClose }) {
+  const [selectedImage, setSelectedImge] = useState(null);
+
   if (!project) return null;
 
   return (
@@ -16,13 +20,14 @@ function ProjectModal({ project, onClose }) {
         >
           X
         </button>
-        <div className="grid grid-cols-1 p-6 sm:grid-cols-3 justify-center items-center">
+        <div className="flex gap-4 p-6 overflow-x-auto no-scrollbar">
           {project.image.map((image, index) => (
             <img
               key={image}
               src={image}
               alt={`${project.title} ${index + 1}`}
-              className="w-52 h-52 rounded-2xl object-cover"
+              onClick={() => setSelectedImge(image)}
+              className="w-52 h-40 rounded-2xl object-cover shrink-0"
             />
           ))}
         </div>
@@ -46,6 +51,24 @@ function ProjectModal({ project, onClose }) {
             </div>
           </div>
         </div>
+        {/* Image Lightbox */}
+        {selectedImage && (
+          <div
+            className="fixed inset-0 z-[60] flex items-center justify-center bg-black/50 p-4 backdrop-blur-sm"
+            onClick={() => setSelectedImge(null)}
+          >
+            <div className="flex flex-col gap-1 items-center justify-center">
+              <img
+                src={selectedImage}
+                alt={project.title}
+                className="max-h-[70vh] max-w-full object-contain rounded-xl shadow-2xl"
+              />
+              <span className=" text-sm italic font-light text-white ">
+                {project.title}
+              </span>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
