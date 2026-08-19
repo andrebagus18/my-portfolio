@@ -11,7 +11,7 @@ function Project() {
   };
   return (
     <div
-      className=" mt-20 pt-16 flex flex-col items-center justify-center"
+      className=" mt-20 pt-20 flex flex-col items-center justify-center"
       id="project"
     >
       <HeadTitle label="My Project" />

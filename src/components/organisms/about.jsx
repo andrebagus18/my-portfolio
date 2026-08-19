@@ -3,7 +3,7 @@ import HeadTitle from "../atoms/headTitle";
 function About() {
   return (
     <div
-      className="w-full flex flex-col items-center justify-center overflow-hidden px-4 pt-16"
+      className="w-full flex flex-col items-center justify-center overflow-hidden px-4 pt-20"
       id="about"
     >
       <HeadTitle label="About Me" />

@@ -28,21 +28,22 @@ function CardProject({ onDetail }) {
               </p>
             </div>
           </div>
-          <div className="flex mt-auto gap-4">
-            <button
-              type="button"
+          <div className="flex mt-auto gap-2">
+            <a
+              href="https://github.com/andrebagus18/ppdb-app"
+              target="blank"
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-cyan-800 text-lg xl:text-xl cursor-pointer hover:text-cyan-500"
             >
-              <span className="flex gap-2 xl:gap-4  items-center justify-center">
+              <span className="flex gap-1 xl:gap-1.5  items-center justify-center">
                 <FaGithub className="text-lg xl:text-xl" /> Repo
               </span>
-            </button>
+            </a>
             <button
               type="button"
               onClick={() => onDetail("ppdb")}
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-amber-800 text-lg xl:text-xl cursor-pointer hover:text-amber-500"
             >
-              <span className="flex gap-2 xl:gap-4  items-center justify-center">
+              <span className="flex gap-1 xl:gap-1.5  items-center justify-center">
                 <BiMessageSquareDetail className="text-lg xl:text-xl" /> Details
               </span>
             </button>
@@ -61,21 +62,22 @@ function CardProject({ onDetail }) {
               </p>
             </div>
           </div>
-          <div className="flex gap-4">
-            <button
-              type="button"
+          <div className="flex gap-2">
+            <a
+              href="https://github.com/andrebagus18/to-do-list"
+              target="blank"
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-cyan-800 text-lg xl:text-xl cursor-pointer hover:text-cyan-500"
             >
-              <span className="flex gap-4 items-center justify-center">
+              <span className="flex gap-1 xl:gap-1.5 items-center justify-center">
                 <FaGithub className="text-lg xl:text-xl" /> Repo
               </span>
-            </button>
+            </a>
             <button
               type="button"
               onClick={() => onDetail("todo")}
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-amber-800 text-lg xl:text-xl cursor-pointer hover:text-amber-500"
             >
-              <span className="flex gap-4 items-center justify-center">
+              <span className="flex gap-1 xl:gap-1.5 items-center justify-center">
                 <BiMessageSquareDetail className="text-lg xl:text-xl" /> Details
               </span>
             </button>
@@ -94,21 +96,22 @@ function CardProject({ onDetail }) {
               </p>
             </div>
           </div>
-          <div className="flex gap-4">
-            <button
-              type="button"
+          <div className="flex gap-2">
+            <a
+              href="https://github.com/andrebagus18/library-books"
+              target="blank"
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-cyan-800 text-lg xl:text-xl cursor-pointer hover:text-cyan-500"
             >
-              <span className="flex gap-4 items-center justify-center">
+              <span className="flex gap-1 xl:gap-1.5 items-center justify-center">
                 <FaGithub className="text-lg xl:text-xl" /> Repo
               </span>
-            </button>
+            </a>
             <button
               type="button"
               onClick={() => onDetail("library")}
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-amber-800 text-lg xl:text-xl cursor-pointer hover:text-amber-500"
             >
-              <span className="flex gap-4 items-center justify-center">
+              <span className="flex gap-1 xl:gap-1.5 items-center justify-center">
                 <BiMessageSquareDetail className="text-lg xl:text-xl" /> Details
               </span>
             </button>
@@ -127,21 +130,22 @@ function CardProject({ onDetail }) {
               </p>
             </div>
           </div>
-          <div className="flex gap-4">
-            <button
-              type="button"
+          <div className="flex gap-2">
+            <a
+              href="https://github.com/andrebagus18/e-commerce"
+              target="blank"
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-cyan-800 text-lg xl:text-xl cursor-pointer hover:text-cyan-500"
             >
-              <span className="flex gap-4 items-center justify-center">
+              <span className="flex gap-1 xl:gap-1.5 items-center justify-center">
                 <FaGithub className="text-lg xl:text-xl" /> Repo
               </span>
-            </button>
+            </a>
             <button
               type="button"
               onClick={() => onDetail("ecommerce")}
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-amber-800 text-lg xl:text-xl cursor-pointer hover:text-amber-500"
             >
-              <span className="flex gap-4 items-center justify-center">
+              <span className="flex gap-1 xl:gap-1.5 items-center justify-center">
                 <BiMessageSquareDetail className="text-lg xl:text-xl" /> Details
               </span>
             </button>
@@ -160,21 +164,22 @@ function CardProject({ onDetail }) {
               </p>
             </div>
           </div>
-          <div className="flex gap-4">
-            <button
-              type="button"
+          <div className="flex gap-2">
+            <a
+              href="https://github.com/andrebagus18/Calculator"
+              target="blank"
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-cyan-800 text-lg xl:text-xl cursor-pointer hover:text-cyan-500"
             >
-              <span className="flex gap-4 items-center justify-center">
+              <span className="flex gap-1 xl:gap-1.5 items-center justify-center">
                 <FaGithub className="text-lg xl:text-xl" /> Repo
               </span>
-            </button>
+            </a>
             <button
               type="button"
               onClick={() => onDetail("calc")}
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-amber-800 text-lg xl:text-xl cursor-pointer hover:text-amber-500"
             >
-              <span className="flex gap-4 items-center justify-center">
+              <span className="flex gap-1 xl:gap-1.5 items-center justify-center">
                 <BiMessageSquareDetail className="text-lg xl:text-xl" /> Details
               </span>
             </button>
@@ -193,21 +198,22 @@ function CardProject({ onDetail }) {
               </p>
             </div>
           </div>
-          <div className="flex gap-4">
-            <button
-              type="button"
+          <div className="flex gap-2">
+            <a
+              href="https://github.com/andrebagus18/Dashboard-siswa"
+              target="blank"
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-cyan-800 text-lg xl:text-xl cursor-pointer hover:text-cyan-500"
             >
-              <span className="flex gap-4 items-center justify-center">
+              <span className="flex gap-1 xl:gap-1.5 items-center justify-center">
                 <FaGithub className="text-lg xl:text-xl" /> Repo
               </span>
-            </button>
+            </a>
             <button
               type="button"
               onClick={() => onDetail("dashSiswa")}
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-amber-800 text-lg xl:text-xl cursor-pointer hover:text-amber-500"
             >
-              <span className="flex gap-4 items-center justify-center">
+              <span className="flex gap-1 xl:gap-1.5 items-center justify-center">
                 <BiMessageSquareDetail className="text-lg xl:text-xl" /> Details
               </span>
             </button>
