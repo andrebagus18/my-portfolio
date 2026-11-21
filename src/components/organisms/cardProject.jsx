@@ -5,8 +5,7 @@ import todo from "../../assets/toDoApp.webp";
 import library from "../../assets/library-books.webp";
 import homeEcommerce from "../../assets/home-ecommerce.webp";
 import calc1 from "../../assets/calc1.webp";
-import dashSiswa1 from "../../assets/dashSiswa1.webp";
-import Cards from "../atoms/cards";
+import qrOrdering2 from "../../assets/qrOrdering-mobileCust2.webp";
 import { FaGithub } from "react-icons/fa";
 import { BiMessageSquareDetail } from "react-icons/bi";
 
@@ -51,20 +50,22 @@ function CardProject({ onDetail }) {
         </div>
         {/* card 2 */}
         <div className="w-full flex flex-col p-4 gap-3 border border-cyan-800/40 bg-cyan-900/10 rounded-xl transition-all duration-300 hover:border-cyan-700 hover:scale-105 hover:shadow-2xl hover:z-1 relative">
-          <ProjectImage target={todo} />
+          <ProjectImage target={qrOrdering2} />
           <div className="flex flex-col">
-            <HeadProject label="Todo App" />
+            <HeadProject label="QR Ordering System" />
             <div className="min-h-30 md:min-h-40 mb-4">
               <p className="text-slate-200 font-normal text-md md:text-md lg:text-lg">
-                A task management application designed to help users organize
-                daily activities, track progress, and improve productivity
-                through a simple and intuitive interface.
+                A QR-based restaurant ordering application that allows customers
+                to browse menus and place orders by scanning a table QR code. It
+                streamlines the ordering process, reduces manual order handling,
+                and helps restaurant staff manage orders and payments more
+                efficiently.
               </p>
             </div>
           </div>
           <div className="flex gap-2">
             <a
-              href="https://github.com/andrebagus18/to-do-list"
+              href="https://github.com/andrebagus18/qr-ordering-system"
               target="blank"
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-cyan-800 text-lg xl:text-xl cursor-pointer hover:text-cyan-500"
             >
@@ -74,7 +75,7 @@ function CardProject({ onDetail }) {
             </a>
             <button
               type="button"
-              onClick={() => onDetail("todo")}
+              onClick={() => onDetail("qrOrdering")}
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-amber-800 text-lg xl:text-xl cursor-pointer hover:text-amber-500"
             >
               <span className="flex gap-1 xl:gap-1.5 items-center justify-center">
@@ -119,20 +120,20 @@ function CardProject({ onDetail }) {
         </div>
         {/* card 4 */}
         <div className="w-full flex flex-col p-4 gap-3 border border-cyan-800/40 bg-cyan-900/10 rounded-xl transition-all duration-300 hover:border-cyan-700 hover:scale-105 hover:shadow-2xl hover:z-1 relative">
-          <ProjectImage target={homeEcommerce} />
+          <ProjectImage target={todo} />
           <div className="flex flex-col">
-            <HeadProject label="Simple E-commerce" />
+            <HeadProject label="Todo App" />
             <div className="min-h-30 md:min-h-40 mb-4">
-              <p className="text-slate-200 font-normal text-md md:text-md lg:text-xl">
-                A simple e-commerce web application it helps users browse
-                products and provides a structured interface for managing
-                product information.
+              <p className="text-slate-200 font-normal text-md md:text-md lg:text-lg">
+                A task management application designed to help users organize
+                daily activities, track progress, and improve productivity
+                through a simple and intuitive interface.
               </p>
             </div>
           </div>
           <div className="flex gap-2">
             <a
-              href="https://github.com/andrebagus18/e-commerce"
+              href="https://github.com/andrebagus18/to-do-list"
               target="blank"
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-cyan-800 text-lg xl:text-xl cursor-pointer hover:text-cyan-500"
             >
@@ -142,7 +143,7 @@ function CardProject({ onDetail }) {
             </a>
             <button
               type="button"
-              onClick={() => onDetail("ecommerce")}
+              onClick={() => onDetail("todo")}
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-amber-800 text-lg xl:text-xl cursor-pointer hover:text-amber-500"
             >
               <span className="flex gap-1 xl:gap-1.5 items-center justify-center">
@@ -187,20 +188,20 @@ function CardProject({ onDetail }) {
         </div>
         {/* card 6 */}
         <div className="w-full flex flex-col p-4 gap-3 border border-cyan-800/40 bg-cyan-900/10 rounded-xl transition-all duration-300 hover:border-cyan-700 hover:scale-105 hover:shadow-2xl hover:z-1 relative">
-          <ProjectImage target={dashSiswa1} />
+          <ProjectImage target={homeEcommerce} />
           <div className="flex flex-col">
-            <HeadProject label="Student Dashboard" />
+            <HeadProject label="Simple E-commerce" />
             <div className="min-h-30 md:min-h-40 mb-4">
-              <p className="text-slate-200 font-normal text-md md:text-md lg:text-lg">
-                A student dashboard that provides centralized access to academic
-                information, announcements, and progress tracking in a
-                responsive web interface.
+              <p className="text-slate-200 font-normal text-md md:text-md lg:text-xl">
+                A simple e-commerce web application it helps users browse
+                products and provides a structured interface for managing
+                product information.
               </p>
             </div>
           </div>
           <div className="flex gap-2">
             <a
-              href="https://github.com/andrebagus18/Dashboard-siswa"
+              href="https://github.com/andrebagus18/e-commerce"
               target="blank"
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-cyan-800 text-lg xl:text-xl cursor-pointer hover:text-cyan-500"
             >
@@ -210,7 +211,7 @@ function CardProject({ onDetail }) {
             </a>
             <button
               type="button"
-              onClick={() => onDetail("dashSiswa")}
+              onClick={() => onDetail("ecommerce")}
               className="px-3 py-1 md:px-4 md:py-2 rounded-xl glass-bg text-amber-800 text-lg xl:text-xl cursor-pointer hover:text-amber-500"
             >
               <span className="flex gap-1 xl:gap-1.5 items-center justify-center">

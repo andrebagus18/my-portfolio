@@ -12,7 +12,10 @@ import homeEcommerce from "../assets/home-ecommerce.webp";
 import loginEcommerce from "../assets/login-ecommerce.webp";
 import registerEcommerce from "../assets/register-ecommerce.webp";
 import calc1 from "../assets/calc1.webp";
-import dashSiswa1 from "../assets/dashSiswa1.webp";
+import qrCheckout from "../assets/qr-Checkout-mobileCust.webp";
+import qrDashboard from "../assets/qr-dashboard-kasir.webp";
+import qrPayment from "../assets/qr-payment-mobileCust.webp";
+import qrOrdering from "../assets/qrOrdering-mobileCust.webp";
 
 export const projects = {
   ppdb: {
@@ -22,11 +25,11 @@ export const projects = {
     tech: ["Laravel 13", "Tailwind CSS", "PostgreSQL"],
   },
 
-  todo: {
-    title: "Todo App",
-    image: [todo],
-    desc: "A task management application that solves the problem of organizing daily activities manually by allowing users to create, update, complete, and delete tasks through a simple interface.",
-    tech: ["HTML", "CSS3", "Javascript"],
+  qrOrdering: {
+    title: "QR Ordering System",
+    image: [qrOrdering, qrCheckout, qrDashboard, qrPayment],
+    desc: "A QR-based restaurant ordering application that allows customers to browse menus and place orders by scanning a table QR code. It streamlines the ordering process, reduces manual order handling, and helps restaurant staff manage orders and payments more efficiently.",
+    tech: ["React", "Laravel", "Tailwind CSS", "Shadcn Ui", "mySQL"],
   },
 
   library: {
@@ -36,11 +39,11 @@ export const projects = {
     tech: ["PHP", "Tailwwind CSS", "PostgreSQL"],
   },
 
-  ecommerce: {
-    title: "Simple E-commerce",
-    image: [homeEcommerce, loginEcommerce, registerEcommerce],
-    desc: "A simple e-commerce web application designed to simplify product management and online sales. It helps users browse products and provides a structured interface for managing product information and transactions, reducing the need for manual product management.",
-    tech: ["PHP", "CSS3", "PostgreSQL"],
+  todo: {
+    title: "Todo App",
+    image: [todo],
+    desc: "A task management application that solves the problem of organizing daily activities manually by allowing users to create, update, complete, and delete tasks through a simple interface.",
+    tech: ["HTML", "CSS3", "Javascript"],
   },
 
   calc: {
@@ -50,10 +53,10 @@ export const projects = {
     tech: ["Javascript", "CSS3"],
   },
 
-  dashSiswa: {
-    title: "Student Dashboard",
-    image: [dashSiswa1],
-    desc: "A student dashboard designed to centralize academic information in one place. It helps students easily access academic data, announcements, and progress information through a simple and responsive interface.",
-    tech: ["Javascript", "CSS3"],
+  ecommerce: {
+    title: "Simple E-commerce",
+    image: [homeEcommerce, loginEcommerce, registerEcommerce],
+    desc: "A simple e-commerce web application designed to simplify product management and online sales. It helps users browse products and provides a structured interface for managing product information and transactions, reducing the need for manual product management.",
+    tech: ["PHP", "CSS3", "PostgreSQL"],
   },
 };
