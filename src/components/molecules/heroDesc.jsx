@@ -14,12 +14,13 @@ function HeroDesc() {
           <span className="text-slate-200 font-bold text-2xl md:text-2xl xl:text-3xl">
             And I'm&nbsp;
           </span>
-          Web Developer
+          Frontend Developer
         </h3>
         <p className="text-slate-200 font-normal text-lg sm:text-xl md:text-xl">
-          I build responsive and user-friendly web applications using React,
-          Laravel, Node.js, and Tailwind CSS, focusing on clean code and
-          practical solutions for real-world problems.
+          I build responsive and user-friendly web applications, focusing on
+          frontend development, clean code, and practical solutions. I also
+          explore backend technologies to understand how complete web
+          applications work.
         </p>
       </div>
       <div className="mt-8 flex items-center gap-6">

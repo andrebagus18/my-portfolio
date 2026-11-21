@@ -10,14 +10,14 @@ function About() {
       <div className="flex flex-col overflow-hidden glass-bg p-2 rounded-3xl mt-8">
         <div className="p-5">
           <p className="text-slate-200 font-normal text-lg md:text-lg lg:text-xl">
-            Hi, I'm Andre, a Web Developer from Indonesia. I enjoy building
-            modern web applications that are simple, responsive, and easy to
-            use. I primarily work with React, Laravel, JavaScript, Node.js, and
-            PostgreSQL to create applications that solve real-world problems. I
-            believe that good software is not only about writing code, but also
-            about understanding users' needs and delivering practical solutions.
-            I continuously improve my skills by building personal projects and
-            learning modern web development technologies.
+            Hi, I'm Andre, a Frontend Developer from Indonesia passionate about
+            building modern, responsive, and user-friendly web applications. I
+            focus on frontend development, creating intuitive user interfaces
+            and solving real-world problems. I'm also continuously expanding my
+            knowledge of backend development to understand how APIs, server-side
+            logic, and databases work together to build complete web
+            applications. I enjoy learning new technologies and improving my
+            skills through hands-on projects.
           </p>
         </div>
         <div className="flex flex-col gap-2 mt-10 mb-4">
@@ -37,7 +37,9 @@ function About() {
               </ul>
             </div>
             <div className="flex flex-col gap-2">
-              <span className="text-slate-200 text-xl font-bold">Backend</span>
+              <span className="text-slate-200 text-xl font-bold">
+                Backend & APIs
+              </span>
               <ul className="px-5 list-disc text-xl">
                 <li className="p-1">Laravel</li>
                 <li className="p-1">Node JS</li>

@@ -53,7 +53,7 @@ function CardProject({ onDetail }) {
           <ProjectImage target={qrOrdering2} />
           <div className="flex flex-col">
             <HeadProject label="QR Ordering System" />
-            <div className="min-h-30 md:min-h-40 mb-4">
+            <div className="min-h-30 md:min-h-40 mb-2">
               <p className="text-slate-200 font-normal text-md md:text-md lg:text-lg">
                 A QR-based restaurant ordering application that allows customers
                 to browse menus and place orders by scanning a table QR code. It
@@ -63,7 +63,7 @@ function CardProject({ onDetail }) {
               </p>
             </div>
           </div>
-          <div className="flex gap-2">
+          <div className="mt-auto flex gap-2">
             <a
               href="https://github.com/andrebagus18/qr-ordering-system"
               target="blank"
@@ -97,7 +97,7 @@ function CardProject({ onDetail }) {
               </p>
             </div>
           </div>
-          <div className="flex gap-2">
+          <div className="mt-auto flex gap-2">
             <a
               href="https://github.com/andrebagus18/library-books"
               target="blank"
@@ -131,7 +131,7 @@ function CardProject({ onDetail }) {
               </p>
             </div>
           </div>
-          <div className="flex gap-2">
+          <div className="mt-auto flex gap-2">
             <a
               href="https://github.com/andrebagus18/to-do-list"
               target="blank"
@@ -165,7 +165,7 @@ function CardProject({ onDetail }) {
               </p>
             </div>
           </div>
-          <div className="flex gap-2">
+          <div className="mt-auto flex gap-2">
             <a
               href="https://github.com/andrebagus18/Calculator"
               target="blank"
@@ -199,7 +199,7 @@ function CardProject({ onDetail }) {
               </p>
             </div>
           </div>
-          <div className="flex gap-2">
+          <div className="mt-auto flex gap-2">
             <a
               href="https://github.com/andrebagus18/e-commerce"
               target="blank"
