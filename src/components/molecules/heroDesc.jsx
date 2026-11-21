@@ -7,11 +7,11 @@ function HeroDesc() {
         <span className="text-cyan-500 font-normal italic text-sm md:text-xl">
           Hello, I'm
         </span>
-        <h1 className="text-cyan-500 font-bold text-4xl my-2 md:text-4xl xl:text-5xl">
+        <h1 className="text-cyan-500 font-bold text-2xl my-2 md:text-4xl xl:text-4xl">
           Andre
         </h1>
         <h3 className="text-cyan-500 font-bold text-2xl md:text-4xl xl:text-5xl mb-4">
-          <span className="text-slate-200 font-bold text-2xl md:text-2xl xl:text-3xl">
+          <span className="text-slate-200 font-bold text-2xl md:text-2xl xl:text-2xl">
             And I'm&nbsp;
           </span>
           Frontend Developer
